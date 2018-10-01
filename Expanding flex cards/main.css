@@ -1,0 +1,99 @@
+@import "https://use.fontawesome.com/releases/v5.3.1/css/all.css";
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    background: var(--optionBackground) no-repeat;
+    background-size: auto 100%;
+    max-width: 60px;
+    min-width: 60px;
+    height: 400px;
+    flex: 0 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    border-radius: 40px;
+    margin-right: 1%;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    box-shadow: inset 0 -120px 120px -120px black,
+    inset 0 -120px 120px -100px black;
+}
+
+.active {
+    background-position: center;
+    max-width: 600px;
+    width: 600px;
+    flex: 1 0;
+    justify-content: flex-start;
+    align-items: flex-end;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        flex-flow: column wrap;
+    }
+
+    .item {
+        width: 90%;
+        max-width: 90%;
+        height: 60px;
+        background-size: 200% auto;
+        background-position: center;
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+    .active {
+        width: 90%;
+        height: 400px;
+        background-size: auto 120%;
+    }
+
+}
+
+.item .label {
+    display: flex;
+    bottom: 20px;
+    height: 40px;
+    /* left: 0; */
+    margin-bottom: 20px;
+}
+
+    .active .label {
+        margin-left: 20px;
+    }
+
+.label .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.item .label .info {
+    display: none;
+}
+    .active .label .info {
+        margin-left: 10px;
+        display: initial;
+    }
+
+    .label .info p {
+        line-height: 20px;
+        margin: 0;
+        color: #ffffff;
+    }
+
+        .label .info p.main-title {
+            font-weight: bold;
+        }
