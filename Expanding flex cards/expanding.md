@@ -32,7 +32,8 @@ boostrap：
 # Animation improvement
 
 In beta1 version, the box expand animation effect is not good. Another box will expand and shrink instantly when a box clicked. Compared to the original, I found that the **"max-width" property** of the container is curcial.
-
+![beta1](./temp2.gif)
+![beta2](./temp1.gif)
 And to make the effect more vivid, the author **changes the "background-size" property's value from "auto 100%" to "auto 120%"** when the box clicked.
 
 cubic-bezier:to define the speed of animation. http://cubic-bezier.com/#.17,.57,.14,.92
