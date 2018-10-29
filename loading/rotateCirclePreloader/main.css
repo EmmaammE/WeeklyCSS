@@ -1,0 +1,167 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.preloading {
+    width: 100px;
+    height: 100px;
+    animation: rotateC 2s infinite linear;
+}
+
+@keyframes rotateC {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(1turn)
+    }
+}
+
+.preloading div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation: circle 2s infinite linear;
+    transition: all .1s ease-in-out;
+
+}
+
+@keyframes circle {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: .2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: .8;
+    }
+
+    100% {
+
+        opacity: 0;
+    }
+}
+
+.preloading div:before {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    content: " ";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: blueviolet;
+}
+
+.preloading div:nth-child(1) {
+    transform: rotateZ(0);
+    animation-delay: 0;
+}
+
+/* .preloading div:nth-child(1)::before {
+    animation-delay: .2s;
+} */
+
+.preloading div:nth-child(2) {
+    transform: rotateZ(36deg);
+    animation-delay: .2s;
+
+}
+
+/* .preloading div:nth-child(2)::before {
+    animation-delay: .4s;
+
+} */
+
+.preloading div:nth-child(3) {
+    transform: rotateZ(72deg);
+    animation-delay: .4s;
+
+}
+
+/* .preloading div:nth-child(3)::before {
+    animation-delay: .6s;
+
+} */
+
+.preloading div:nth-child(4) {
+    transform: rotateZ(108deg);
+    animation-delay: .6s;
+
+}
+
+/* .preloading div:nth-child(4)::before {
+    animation-delay: .8s;
+
+} */
+
+.preloading div:nth-child(5) {
+    transform: rotateZ(144deg);
+    animation-delay: .8s;
+
+}
+
+/* .preloading div:nth-child(5)::before {
+    animation-delay: 1s;
+
+} */
+
+.preloading div:nth-child(6) {
+    transform: rotate(180deg);
+    animation-delay: 1s;
+
+}
+
+/* .preloading div:nth-child(6)::before {
+    animation-delay: 1.2s;
+
+} */
+
+.preloading div:nth-child(7) {
+    transform: rotate(216deg);
+    animation-delay: 1.2s;
+
+}
+/*
+.preloading div:nth-child(7)::before {
+    animation-delay: 1.4s;
+
+} */
+
+.preloading div:nth-child(8) {
+    transform: rotate(252deg);
+    animation-delay: 1.4s;
+
+}
+
+/* .preloading div:nth-child(8)::before {
+    animation-delay: 1.6s;
+
+} */
+
+.preloading div:nth-child(9) {
+    transform: rotate(288deg);
+    animation-delay: 1.6s;
+
+}
+
+/* .preloading div:nth-child(9)::before {
+    animation-delay: 1.8s;
+
+} */
+
+.preloading div:nth-child(10) {
+    transform: rotate(-36deg);
+    animation-delay: 1.8s;
+
+}
